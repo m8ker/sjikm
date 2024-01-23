@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(.+\.)?sjikm\.org [NC]
+RewriteRule .*\.(jp(e)?g|gif|bmp|png)$ https://imgur.com/ZtXiCBw.gif [L,R]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+RewriteCond %{HTTP_HOST} ^www\.sjikm\.org [NC]
+RewriteRule ^(.*)$ http://sjikm.org/$1 [L,R=301]
+RedirectMatch 404 /\.git
