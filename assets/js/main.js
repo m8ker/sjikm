@@ -8,6 +8,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+  //match social width to logo
+  const logoWidth = document.querySelector(".header .logo img").getBoundingClientRect().width;
+  console.log(logoWidth);
+  const matchWidth = document.querySelector(".match-logo") 
+  matchWidth.style.width = logoWidth + 'px';
+  
   /**
    * Sticky header on scroll
    */
@@ -112,43 +118,12 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  /**
-   * Open and close the search form.
-   */
-  const searchOpen = document.querySelector('.js-search-open');
-  const searchClose = document.querySelector('.js-search-close');
-  const searchWrap = document.querySelector(".js-search-form-wrap");
-
-  searchOpen.addEventListener("click", (e) => {
-    e.preventDefault();
-    searchWrap.classList.add("active");
-  });
-
-  searchClose.addEventListener("click", (e) => {
-    e.preventDefault();
-    searchWrap.classList.remove("active");
-  });
 
   /**
    * Initiate glightbox
    */
   const glightbox = GLightbox({
     selector: '.glightbox'
-  });
-
-  /**
-   * Animation on scroll function and init
-   */
-  function aos_init() {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    });
-  }
-  window.addEventListener('load', () => {
-    aos_init();
   });
 
 });
