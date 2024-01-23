@@ -238,7 +238,7 @@ section {
     justify-content: space-between;
     padding: 10px 0 10px 30px;
     font-family: var(--font-default);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     color: rgba(var(--color-default-rgb), 1);
     white-space: nowrap;
@@ -374,7 +374,7 @@ section {
     justify-content: space-between;
     padding: 10px 20px;
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--color-primary);
     white-space: nowrap;

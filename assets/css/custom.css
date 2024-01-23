@@ -37,4 +37,11 @@ section {
 
 #footer h3 {
   color: white;
+}
+
+nav#navbar.navbar ul {
+  list-style-type: none;
+}
+nav#navbar.navbar ul li {
+  list-style-type: none;
 }/*# sourceMappingURL=custom.css.map */
