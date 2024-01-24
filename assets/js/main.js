@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //match social width to logo
   const logoWidth = document.querySelector(".header .logo img").getBoundingClientRect().width;
-  console.log(logoWidth);
   const matchWidth = document.querySelector(".match-logo") 
   matchWidth.style.width = logoWidth + 'px';
   
@@ -98,32 +97,32 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Hero Slider
    */
-  var swiper = new Swiper(".sliderFeaturedPosts", {
-    spaceBetween: 0,
-    speed: 500,
-    centeredSlides: true,
-    loop: true,
-    slideToClickedSlide: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".custom-swiper-button-next",
-      prevEl: ".custom-swiper-button-prev",
-    },
-  });
+  // var swiper = new Swiper(".sliderFeaturedPosts", {
+  //   spaceBetween: 0,
+  //   speed: 500,
+  //   centeredSlides: true,
+  //   loop: true,
+  //   slideToClickedSlide: true,
+  //   autoplay: {
+  //     delay: 3000,
+  //     disableOnInteraction: false,
+  //   },
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true,
+  //   },
+  //   navigation: {
+  //     nextEl: ".custom-swiper-button-next",
+  //     prevEl: ".custom-swiper-button-prev",
+  //   },
+  // });
 
 
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  // const glightbox = GLightbox({
+  //   selector: '.glightbox'
+  // });
 
 });
