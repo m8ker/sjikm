@@ -19,11 +19,10 @@ a{
 .center{
   text-align: center;
 }
-// .hero-header{
-//   background-image: url(/assets/img/sji.jpg);
-//   background-position: center ;
-//   background-size: cover;
-// }
+
+.hero-header{
+  background-color: #e3e3e3;
+}
 
 .brown-container{
   background-color:tan;
@@ -57,4 +56,8 @@ nav#navbar.navbar{
 
 label{
   font-size:20px;
+}
+
+.footer .credits, .footer .credits a{
+  color:black;
 }

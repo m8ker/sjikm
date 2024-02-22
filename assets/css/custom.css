@@ -18,6 +18,10 @@ a:hover {
   text-align: center;
 }
 
+.hero-header {
+  background-color: #e3e3e3;
+}
+
 .brown-container {
   background-color: tan;
   border-radius: 5px;
@@ -48,4 +52,8 @@ nav#navbar.navbar ul li {
 
 label {
   font-size: 20px;
+}
+
+.footer .credits, .footer .credits a {
+  color: black;
 }/*# sourceMappingURL=custom.css.map */
