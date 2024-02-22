@@ -17,6 +17,10 @@ a{
     text-decoration: underline;
   }
 }
+@media (min-width: 1280px){
+.navbar a, .navbar a:focus {
+    font-size: 1.25rem;
+}}
 .center{
   text-align: center;
 }
