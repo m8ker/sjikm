@@ -40,8 +40,10 @@ section{
 .brown-bg{
   background-color:tan;
 }
-#footer h3{
-  color:white;
+#footer{
+  h3{
+    color:white;
+  }
 }
 
 nav#navbar.navbar{
@@ -51,4 +53,8 @@ nav#navbar.navbar{
       list-style-type: none;
     }
   }
+}
+
+label{
+  font-size:20px;
 }

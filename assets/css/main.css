@@ -1195,7 +1195,7 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.footer {
+.footer:not(label) {
   overflow: hidden;
   background: rgba(var(--color-black-rgb), 0.9);
   font-size: 16px;
